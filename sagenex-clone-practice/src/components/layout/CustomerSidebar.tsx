@@ -54,7 +54,7 @@ export function CustomerSidebar({ onNavigate }: CustomerSidebarProps) {
                 onClick={onNavigate}
                 className={`flex items-center gap-2.5 rounded-xl px-3 py-2.5 text-[13px] font-semibold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-red ${
                   active
-                    ? "bg-brand-red text-white shadow-sm"
+                    ? "gradient-hero-red text-white shadow-sm"
                     : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
                 }`}
               >

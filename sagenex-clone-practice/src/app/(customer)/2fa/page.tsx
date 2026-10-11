@@ -1,7 +1,5 @@
-import { makePlaceholderPage } from "@/components/portal/makePlaceholderPage";
+import { TwoFactorPage } from "@/components/portal/TwoFactorPage";
 
-export default makePlaceholderPage(
-  "Two-Factor Authentication",
-  "/2fa",
-  "Navigation works. Full layout will follow after /dashboard review and screenshot references.",
-);
+export default function Page() {
+  return <TwoFactorPage />;
+}

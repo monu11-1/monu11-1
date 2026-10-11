@@ -180,9 +180,62 @@ export const riskRegister = [
 
 export const sampleDocuments = [
   { id: "sd1", title: "Gold Invoice", status: "Available to download" },
-  { id: "sd2", title: "Title Schedule", status: "Available to download" },
-  { id: "sd3", title: "Custody Certificate", status: "Available to download" },
-  { id: "sd4", title: "Audit Record", status: "Available to download" },
+  { id: "sd2", title: "Title & Custody Schedule", status: "Available to download" },
+  { id: "sd3", title: "Risk Disclosure", status: "Available to download" },
+  { id: "sd4", title: "Grievance Policy", status: "Available to download" },
+];
+
+export const supportTickets = [
+  {
+    id: "DEMO-TCK-104",
+    subject: "ReKYC document upload guidance",
+    status: "Open",
+    updated: "10 Oct 2026",
+    channel: "Portal",
+  },
+  {
+    id: "DEMO-TCK-091",
+    subject: "Settlement ceiling clarification",
+    status: "Awaiting reply",
+    updated: "02 Oct 2026",
+    channel: "Email",
+  },
+  {
+    id: "DEMO-TCK-077",
+    subject: "Custody certificate download",
+    status: "Resolved",
+    updated: "18 Sep 2026",
+    channel: "Portal",
+  },
+];
+
+export const kycSteps = [
+  { id: "k1", label: "Identity document", status: "update_required" as const },
+  { id: "k2", label: "PAN verification", status: "update_required" as const },
+  { id: "k3", label: "Bank account", status: "complete" as const },
+  { id: "k4", label: "Source of funds", status: "pending" as const },
+  { id: "k5", label: "Selfie / liveness", status: "pending" as const },
+];
+
+export const twoFactorMethods = [
+  {
+    id: "app",
+    title: "Authenticator app",
+    detail: "Demo TOTP device · last verified 01 Oct 2026",
+    enabled: true,
+  },
+  {
+    id: "sms",
+    title: "SMS backup codes",
+    detail: "Not configured in this practice account",
+    enabled: false,
+  },
+  {
+    id: "email",
+    title: "Email challenge",
+    detail: "Used for demo settlement confirmations",
+    enabled: true,
+  },
 ];
 
 export const demoRecipients = [
