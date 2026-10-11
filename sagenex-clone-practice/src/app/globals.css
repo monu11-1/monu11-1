@@ -43,8 +43,9 @@
   --color-brand-blue: var(--brand-blue);
   --color-brand-green-bright: var(--brand-green-bright);
   --color-border: var(--border);
-  --font-sans: var(--font-body);
-  --font-display: var(--font-display);
+  --font-sans: var(--font-plus-jakarta);
+  --font-display: var(--font-plus-jakarta);
+  --font-body: var(--font-plus-jakarta);
 }
 
 * {
@@ -62,15 +63,22 @@ section[id] {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-body), "Segoe UI", sans-serif;
+  font-family: var(--font-plus-jakarta), "Plus Jakarta Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+.font-display,
+.font-sans {
+  font-family: var(--font-plus-jakarta), "Plus Jakarta Sans", sans-serif;
 }
 
 h1,
 h2,
 h3,
 .font-display {
-  font-family: var(--font-display), var(--font-body), sans-serif;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
 }
 
 @keyframes ticker-scroll {
