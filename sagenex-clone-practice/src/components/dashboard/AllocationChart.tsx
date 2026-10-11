@@ -1,20 +1,23 @@
 "use client";
 
-import { Cell, Pie, PieChart, ResponsiveContainer, Tooltip } from "recharts";
+import { Cell, Pie, PieChart, Tooltip } from "recharts";
 import { allocationSlices } from "@/data/dashboard";
+import { ChartFrame } from "@/components/ui/ChartFrame";
 
 export function AllocationChart() {
   return (
     <div className="flex h-72 flex-col gap-4 sm:flex-row sm:items-center">
-      <div className="h-56 w-full sm:h-full sm:flex-1">
-        <ResponsiveContainer width="100%" height="100%">
-          <PieChart>
+      <ChartFrame className="h-56 w-full sm:h-full sm:flex-1">
+        {({ width, height }) => (
+          <PieChart width={width} height={height}>
             <Pie
               data={allocationSlices}
               dataKey="value"
               nameKey="name"
-              innerRadius={55}
-              outerRadius={85}
+              cx="50%"
+              cy="50%"
+              innerRadius={Math.min(width, height) * 0.28}
+              outerRadius={Math.min(width, height) * 0.42}
               paddingAngle={3}
             >
               {allocationSlices.map((slice) => (
@@ -30,8 +33,8 @@ export function AllocationChart() {
               }}
             />
           </PieChart>
-        </ResponsiveContainer>
-      </div>
+        )}
+      </ChartFrame>
       <ul className="space-y-2 sm:w-44">
         {allocationSlices.map((slice) => (
           <li key={slice.name} className="flex items-center gap-2 text-sm">
