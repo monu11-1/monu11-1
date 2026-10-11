@@ -6,6 +6,8 @@ type ButtonProps = {
   variant?: "primary" | "secondary" | "ghost";
   className?: string;
   type?: "button" | "submit";
+  onClick?: () => void;
+  disabled?: boolean;
 };
 
 const variants = {
@@ -14,7 +16,7 @@ const variants = {
   secondary:
     "bg-white text-foreground border border-border hover:border-brand-red/40",
   ghost:
-    "bg-transparent text-foreground border border-border hover:bg-surface",
+    "bg-transparent text-foreground border border-border hover:bg-surface-muted",
 };
 
 export function Button({
@@ -23,8 +25,10 @@ export function Button({
   variant = "primary",
   className = "",
   type = "button",
+  onClick,
+  disabled = false,
 }: ButtonProps) {
-  const classes = `inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-all duration-200 ${variants[variant]} ${className}`;
+  const classes = `inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-red disabled:cursor-not-allowed disabled:opacity-50 ${variants[variant]} ${className}`;
 
   if (href) {
     return (
@@ -35,7 +39,12 @@ export function Button({
   }
 
   return (
-    <button type={type} className={classes}>
+    <button
+      type={type}
+      onClick={onClick}
+      disabled={disabled}
+      className={classes}
+    >
       {children}
     </button>
   );

@@ -28,7 +28,7 @@ export function Navbar() {
             </a>
           ))}
           <Button href="/dashboard" variant="secondary" className="!px-4 !py-2.5">
-            Dashboard
+            Portal
           </Button>
           <Button href="/login" className="!px-5 !py-2.5">
             Login
