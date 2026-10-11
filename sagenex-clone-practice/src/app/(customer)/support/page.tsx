@@ -1,7 +1,5 @@
-import { makePlaceholderPage } from "@/components/portal/makePlaceholderPage";
+import { SupportPage } from "@/components/portal/SupportPage";
 
-export default makePlaceholderPage(
-  "Support & Complaints",
-  "/support",
-  "Navigation works. Full layout will follow after /dashboard review and screenshot references.",
-);
+export default function Page() {
+  return <SupportPage />;
+}

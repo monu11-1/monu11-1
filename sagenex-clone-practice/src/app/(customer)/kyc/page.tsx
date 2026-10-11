@@ -1,7 +1,5 @@
-import { makePlaceholderPage } from "@/components/portal/makePlaceholderPage";
+import { KycPage } from "@/components/portal/KycPage";
 
-export default makePlaceholderPage(
-  "KYC Verification",
-  "/kyc",
-  "Navigation works. Full layout will follow after /dashboard review and screenshot references.",
-);
+export default function Page() {
+  return <KycPage />;
+}

@@ -1,7 +1,5 @@
-import { makePlaceholderPage } from "@/components/portal/makePlaceholderPage";
+import { CustodyTitlePage } from "@/components/portal/CustodyTitlePage";
 
-export default makePlaceholderPage(
-  "Custody & Title",
-  "/custody-title",
-  "Navigation works. Full layout will follow after /dashboard review and screenshot references.",
-);
+export default function Page() {
+  return <CustodyTitlePage />;
+}

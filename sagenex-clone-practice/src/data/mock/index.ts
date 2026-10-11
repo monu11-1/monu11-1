@@ -2,6 +2,7 @@ export * from "./users";
 export * from "./wallet";
 export * from "./gold";
 export * from "./activity";
+export * from "./portal";
 
 import { defaultCustomer } from "./users";
 import { getWallet } from "./wallet";

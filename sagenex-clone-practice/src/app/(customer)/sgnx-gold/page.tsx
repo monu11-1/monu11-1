@@ -1,7 +1,5 @@
-import { makePlaceholderPage } from "@/components/portal/makePlaceholderPage";
+import { SgnxGoldPage } from "@/components/portal/SgnxGoldPage";
 
-export default makePlaceholderPage(
-  "SGNX Gold",
-  "/sgnx-gold",
-  "Navigation works. Full layout will follow after /dashboard review and screenshot references.",
-);
+export default function Page() {
+  return <SgnxGoldPage />;
+}

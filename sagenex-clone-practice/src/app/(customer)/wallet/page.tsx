@@ -1,7 +1,5 @@
-import { makePlaceholderPage } from "@/components/portal/makePlaceholderPage";
+import { SettlementsPage } from "@/components/portal/SettlementsPage";
 
-export default makePlaceholderPage(
-  "Settlements",
-  "/wallet",
-  "Navigation works. Full layout will follow after /dashboard review and screenshot references.",
-);
+export default function Page() {
+  return <SettlementsPage />;
+}
