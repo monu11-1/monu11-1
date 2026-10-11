@@ -1,7 +1,5 @@
-import { makePlaceholderPage } from "@/components/portal/makePlaceholderPage";
+import { PayoutsPage } from "@/components/portal/PayoutsPage";
 
-export default makePlaceholderPage(
-  "Distribution Statements",
-  "/payouts",
-  "Navigation works. Full layout will follow after /dashboard review and screenshot references.",
-);
+export default function Page() {
+  return <PayoutsPage />;
+}

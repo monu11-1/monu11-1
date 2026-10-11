@@ -1,7 +1,5 @@
-import { makePlaceholderPage } from "@/components/portal/makePlaceholderPage";
+import { MyGoldPage } from "@/components/portal/MyGoldPage";
 
-export default makePlaceholderPage(
-  "My Gold",
-  "/my-gold",
-  "Scaffold for package gold equivalent, valuation chart, holdings/history tabs, and disclosures. Will be built from your screenshots next.",
-);
+export default function Page() {
+  return <MyGoldPage />;
+}

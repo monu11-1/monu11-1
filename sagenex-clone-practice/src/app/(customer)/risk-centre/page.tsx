@@ -1,7 +1,5 @@
-import { makePlaceholderPage } from "@/components/portal/makePlaceholderPage";
+import { RiskCentrePage } from "@/components/portal/RiskCentrePage";
 
-export default makePlaceholderPage(
-  "Risk Centre",
-  "/risk-centre",
-  "Navigation works. Full layout will follow after /dashboard review and screenshot references.",
-);
+export default function Page() {
+  return <RiskCentrePage />;
+}
