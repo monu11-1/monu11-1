@@ -45,7 +45,10 @@ export default function LoginPage() {
           </p>
           <div className="mt-6 flex flex-col gap-3">
             <Button href="/dashboard" variant="secondary" className="w-full">
-              Nominee Access (placeholder)
+              Enter member dashboard (demo)
+            </Button>
+            <Button href="/admin" variant="ghost" className="w-full">
+              Enter admin console (demo)
             </Button>
             <p className="text-center text-sm text-muted">
               No account?{" "}

@@ -27,6 +27,9 @@ export function Navbar() {
               {link.label}
             </a>
           ))}
+          <Button href="/dashboard" variant="secondary" className="!px-4 !py-2.5">
+            Dashboard
+          </Button>
           <Button href="/login" className="!px-5 !py-2.5">
             Login
           </Button>
@@ -55,6 +58,12 @@ export function Navbar() {
                 {link.label}
               </a>
             ))}
+            <Button href="/dashboard" variant="secondary" className="w-full">
+              Dashboard (demo)
+            </Button>
+            <Button href="/admin" variant="ghost" className="w-full">
+              Admin (demo)
+            </Button>
             <Button href="/login" className="w-full">
               Login
             </Button>

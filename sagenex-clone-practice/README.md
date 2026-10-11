@@ -26,8 +26,8 @@ Open [http://localhost:3000](http://localhost:3000).
 | Route | Status |
 | --- | --- |
 | `/` | Public homepage clone |
-| `/login` | Placeholder login UI |
-| `/dashboard` | Placeholder |
-| `/admin` | Placeholder |
+| `/login` | Login UI only (no real auth) |
+| `/dashboard` | Mock member dashboard (Recharts) |
+| `/admin` | Mock admin console |
 
-Stop after homepage + placeholders until dashboards are approved.
+Demo / practice only. Teaching notes live in the Project store under `docs/homepage-guide.md` and `docs/dashboard-guide.md`.
